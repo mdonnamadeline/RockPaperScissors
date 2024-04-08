@@ -57,6 +57,12 @@ public class MainActivity extends AppCompatActivity {
         lblround.setText("Round: " + round);
 
         btnBet.setOnClickListener(v -> {
+
+            if (radioGroup.getCheckedRadioButtonId() == -1) {
+                // No radio buttons are checked
+                showToast("Choose your bet first");
+                return;
+            }
             // Set the images to rock
             imgYou.setImageResource(R.drawable.rock_left);
             imgCom.setImageResource(R.drawable.rock_right);
