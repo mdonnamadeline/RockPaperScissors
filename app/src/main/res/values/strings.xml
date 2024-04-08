@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">CC10624RockPaperScissors</string>
-
+    <string name="roundResult">Round</string>
+    <string name="playerScore">Player Score</string>
+    <string name="botScore">Bot Score</string>
+    <string name="imgYou">Player</string>
+    <string name="imgBot">Bot</string>
+    <string name="btnRock">Rock</string>
+    <string name="btnPaper">Paper</string>
+    <string name="btnScissors">Scissors</string>
+    <string name="btnBet">Bet</string>
+    <string name="btnReset">Reset</string>
+    <string name="bntClose">Close</string>
+    <string name="win">You Win!</string>
+    <string name="lose">You Lose!</string>
+    <string name="draw">Draw!</string>
 </resources>
