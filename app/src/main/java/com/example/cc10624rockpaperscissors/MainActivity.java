@@ -1,6 +1,7 @@
 package com.example.cc10624rockpaperscissors;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -8,6 +9,7 @@ import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
 import android.app.AlertDialog;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -126,10 +128,10 @@ public class MainActivity extends AppCompatActivity {
                     lblScoreYou.setText("Score: " + scores[0]);
                     lblScoreCom.setText("Score: " + scores[1]);
 
-                    if (scores[0] == 10) {
+                    if (scores[0] == 5) {
                         showMessage("Congratulations!", "You won the game!");
                         btnBet.setEnabled(false);
-                    } else if (scores[1] == 10) {
+                    } else if (scores[1] == 5) {
                         showMessage("Game Over", "You lost the game.");
                         btnBet.setEnabled(false);
                     } else {
@@ -152,10 +154,10 @@ public class MainActivity extends AppCompatActivity {
             lblScoreCom.setText("Com: " + scores[1]);
             lblround.setText("Round: " + round);
 
-            if (scores[0] == 10) {
+            if (scores[0] == 5) {
                 showMessage("Congratulations!", "You won the game!");
                 btnBet.setEnabled(false);
-            } else if (scores[1] == 10) {
+            } else if (scores[1] == 5) {
                 showMessage("Game Over", "You lost the game.");
                 btnBet.setEnabled(false);
             } else {

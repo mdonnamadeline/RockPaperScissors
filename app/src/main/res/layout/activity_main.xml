@@ -36,8 +36,8 @@
         android:id="@+id/lblScoreYou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="12dp"
         android:text="Score: "
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
@@ -52,17 +52,17 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toEndOf="@+id/lblScoreYou"
         app:layout_constraintTop_toBottomOf="@+id/lblRound"
-        app:layout_constraintVertical_bias="0.058" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="85dp"
         android:layout_height="24dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="12dp"
         android:text="Player "
         app:layout_constraintBottom_toTopOf="@+id/imgYou"
         app:layout_constraintStart_toStartOf="parent" />
@@ -71,19 +71,19 @@
         android:id="@+id/textView4"
         android:layout_width="79dp"
         android:layout_height="23dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="12dp"
         android:text="Bot"
         app:layout_constraintBottom_toTopOf="@+id/imgBot"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toEndOf="@+id/textView3" />
 
     <ImageView
         android:id="@+id/imgYou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintStart_toStartOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -94,6 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="72dp"
         android:text="vs"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toStartOf="@+id/imgBot"
         app:layout_constraintStart_toEndOf="@+id/imgYou"
@@ -104,8 +105,8 @@
         android:id="@+id/imgBot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -154,21 +155,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="RESET" />
+            android:text="RESET"
+            android:backgroundTint="@color/my_pink" />
 
         <Button
             android:id="@+id/btnBet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="BET" />
+            android:text="BET"
+            android:backgroundTint="@color/my_pink" />
 
         <Button
             android:id="@+id/btnClose"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="CLOSE" />
+            android:text="CLOSE"
+            android:backgroundTint="@color/my_pink" />
     </LinearLayout>
 
     <TextView
