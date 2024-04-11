@@ -14,4 +14,5 @@
     <string name="win">You Win!</string>
     <string name="lose">You Lose!</string>
     <string name="draw">Draw!</string>
+    <string name="Rules">Rock wins against scissors; paper wins against rock; and scissors wins against paper.</string>
 </resources>
